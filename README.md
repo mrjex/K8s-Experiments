@@ -4,7 +4,6 @@
 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
@@ -65,46 +64,3 @@ Below, I have formatted my learning lessons in bullet-points:
 - A **Cluster** is made of several nodes that contains Pods, which in turn have docker containers
 
 - **Scaling** is accomplished by changing the number of replicas in a Deployment. Scaling out a Deployment will ensure new Pods are created and scheduled to Nodes with available resources. Scaling will increase the number of Pods to the new desired state.
-
-
-#### Kubernetes CLI Tools
-
-- **Minikube** is a command line tool that creates a 1-node virtual box to run the Pods with the objective to consume minimal resources with respect to the limited resources of the average user's computer
-
-- **Kubectl** interacts with the Kubernetes API via a command line interface
-
-- **Helm** is a package Manager for kubernetes
-
-- **Kustomization** is a configuration transformation tool
-
-
-### Amazon Web Services - EKS
-
-- Amazon EKS runs the Kubernetes management infrastructure for you across multiple AWS availability zones to eliminate a single point of failure
-
-- Easy to integrate with other AWS services (IAM, Load Balancer, EC2 Spot Instances and CloudWatch log, etc.)
-
-- To create a cluster in the EKS service, you can do it in one of three ways: ekctl CLI, AWS Management Console, AWS CLI. After browsing the documentation I went with the eksctl command line utility because it involved the least amount of steps and was easier to automate and via shell scripts.
-
-- AWS EC2 --> Amazon Elastic Compute Cloud --> Provides secure computing capacity in the cloud --> Allows one to launch and manage virtual machines in the cloud
-
-- Since I used AWS EC2 in the previous Real Estate project with the Flask server and ML prediction (link here), I decided to use AWS Fargate instead. If I would go with the EC2-approach, I would be able to manage the nodes manually via the AWS UI. The benefits with Fargate is A, B and C.
-
-- Fargate is a serverless option for running docker containers
-
-- EC2 --> Provides control of the services and the infrastructure behind the scenes for the developer
-
-
-##### Fargate
-
-- Fargate --> Since the service itself takes care of the infrastructure so that you don't have to manually manage the instances/nodes, it's safe to say that going with this service is the more flexible option in the sense that unpredictable workloads won't be a problem to the dynamic infrastructure
-
-- AWS Fargate is a serverless computing engine that allows you to run containers in the cloud without having to manage the underlying infrastructure. It is a compute engine for Amazon Elastic Container Service (ECS) that enables you to deploy and manage Docker containers without having to provision and manage the underlying servers or clusters.
-
-- AWS Fargate --> Schedule Pods
-
-###### Load Balancing with Fargate
-
-- AWS Fargate & AWS ELB (Elastic Load Balancer)
-
-- Fargate integrates with Elastic Load Balancing (ELB), which allows you to distribute traffic evenly across multiple containers. This helps ensure that your application is highly available, and that traffic is directed to healthy containers. You can use ELB to manage traffic to your containers and automatically adjust the number of containers running based on traffic patterns.
