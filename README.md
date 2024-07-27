@@ -11,10 +11,9 @@
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![Helm](https://img.shields.io/badge/helm-%230F1689.svg?style=for-the-badge&logo=helm&logoColor=white)
 
-In the summer of 2024, I experimented with Kubernetes with the purpose of learning the theoretical and practical aspects. I setup 6 projects provided by the official documentation and wrote my shell scripts to get hands-on experience. As I started learning about Kubernetes I realized how well-known and adapted it is accross the software development industry. As a result, I ended up discovering useful combinations that are made possible with Kubernetes and other software technologies.
+In the summer of 2024, I experimented with Kubernetes with the purpose of learning the theoretical and practical aspects. I setup 6 projects and wrote my shell scripts to get hands-on experience.
 
 ![kubernetes-cluster](kubernetes-cluster.jpg)
-
 
 ### Project 1 - Redis
 
@@ -30,7 +29,7 @@ This project involves Mongo, which I'm familiar with due to earlier projects. Th
 
 ### Project 4 - EKS
 
-This is my own experimentaiton project. As I researched how to work with AWS (Amazon Web Services) and Kubernetes at the same time, I encountered many articles about AWS EKS (Elastic Kubernetes Service). It also turned out that AWS ECR (Elastic Container Registry) only supports public docker images. Thus, I had to publish the project's docker image to Dockerhub and retrieve it via URL. Navigate to `/project-4-eks` to view the project.
+This is my experimentaiton project. As I researched how to work with AWS (Amazon Web Services) and Kubernetes at the same time, I encountered many articles about AWS EKS (Elastic Kubernetes Service).
 
 ### Project 5 - SQL
 
@@ -39,28 +38,3 @@ As I became more knowledgable with Kubernetes, I looked into more advanced compo
 ### Project 6 - Wordpress
 
 As manifestations became tedious and repetitive I searched for efficiency solutions and found *Helm* and *Kustomization*. In this project I "refactor" the variables in *kustomization.yaml* to encapsulate the content of *mysql-deployment.yaml* and *wordpress-deployment.yaml*. Navigate to `/project-6-wordpress` to view the project.
-
-
-## Other Knowledge Gained
-
-Below, I have formatted my learning lessons in bullet-points:
-
-- An open-source container management platform called Kubernetes automates the deployment, scaling, descaling, and load balancing of containers (also called a container orchestration tool)
-
-- A **Service** component defines a policy to access the Pods --> Communication with persistent static IP address attached to a Pod
-
-- A **Service** routes traffic across a set of Pods. Services are the abstraction that allows pods to die and replicate in Kubernetes without impacting your application
-
-- A **Node** component is a Virtual Machine or a physical computer that serves as a worker machine in a Kubernetes cluster
-
-- A **Pod** is a group of one or more docker containers, tied together for the purposes of administration and networking
-
-- A **Pod** component always runs on a Node, and a Node can have multiple pods, and each Pod gets its own unique internal IP address
-
-- **Ingress** component routes traffic into cluster, forwards flow to the Services
-
-- **StatefulSet** component useful for applications that are intended to persist the state of data. The most common use case is databases.
-
-- A **Cluster** is made of several nodes that contains Pods, which in turn have docker containers
-
-- **Scaling** is accomplished by changing the number of replicas in a Deployment. Scaling out a Deployment will ensure new Pods are created and scheduled to Nodes with available resources. Scaling will increase the number of Pods to the new desired state.
