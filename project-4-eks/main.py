@@ -1,1 +1,1 @@
-print("Docker is magic!")
+print("Running docker container deployed in Kubernetes")
