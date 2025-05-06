@@ -11,30 +11,18 @@
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![Helm](https://img.shields.io/badge/helm-%230F1689.svg?style=for-the-badge&logo=helm&logoColor=white)
 
-In the summer of 2024, I experimented with Kubernetes with the purpose of learning the theoretical and practical aspects. I setup 6 projects and wrote my shell scripts to get hands-on experience.
+In the summer of 2024, I experimented with Kubernetes with the purpose of learning the theoretical and practical aspects. I setup 6 projects and wrote shell scripts to get hands-on experience.
 
 ![kubernetes-cluster](kubernetes-cluster.jpg)
 
-### Project 1 - Redis
+- **Project 1 - Redis:** This subdirectory involves basic Kubernetes components such as *Service*, *Deployment* and *Load Balancer*, defined through `.yaml` manifestations.
 
-My first project involves Kubernetes components such as *Service* and *Deployment* through `.yaml` manifestations, and pertains to the *Redis* technology. For me to learn better, I wrote a few Bash scripts. Navigate to `/project-1-redis` to view the project.
+- **Project 2 - Nginx:** Focuses more on learning *Pods* and what distinguishes them from *Docker Containers*.
 
-### Project 2 - Nginx
+- **Project 3 - Mongo:** Involves *Mongo*, exploring components such as *ConfigMap* and *Secret* to store epersonal data in the manifestations
 
-Following the structure of the 1st project, I used manifestations to setup the project through Kubernetes. This project focused more on learning Pods and what distinguishes them from Docker Containers. Navigate to `/project-2-nginx` to view the project.
+- **Project 4 - EKS:** Experimentation with automated *AWS EKS* (Elastic Kubernetes Service) setup and basic Kubernetes Pods in Python
 
-### Project 3 - Mongo
+- **Project 5 - SQL:** Data persistance through *Stateful* component
 
-This project involves Mongo, which I'm familiar with due to earlier projects. The new components I used here was *Configmap* and *Secret* to store personal data in the manifestations. Also, I learned about how *Nodes* differantiate from *Pods*. Navigate to `/project-3-mongo` to view the project.
-
-### Project 4 - EKS
-
-This is my experimentaiton project. As I researched how to work with AWS (Amazon Web Services) and Kubernetes at the same time, I encountered many articles about AWS EKS (Elastic Kubernetes Service).
-
-### Project 5 - SQL
-
-As I became more knowledgable with Kubernetes, I looked into more advanced components. For instance, persisting data can be done via a *Stateful* component. Navigate to `/project-5-sql` to view the project.
-
-### Project 6 - Wordpress
-
-As manifestations became tedious and repetitive I searched for efficiency solutions and found *Helm* and *Kustomization*. In this project I "refactor" the variables in *kustomization.yaml* to encapsulate the content of *mysql-deployment.yaml* and *wordpress-deployment.yaml*. Navigate to `/project-6-wordpress` to view the project.
+- **Project 6 - Wordpress:** Using *Helm* and *Kustomization* to remove manifestation redundancies and improving code maintenance
